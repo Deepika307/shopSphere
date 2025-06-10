@@ -1,0 +1,121 @@
+.body-measurement-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.body-measurement-modal {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.body-measurement-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.body-measurement-form label {
+  text-align: left;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.body-measurement-form input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.body-measurement-form input:focus {
+  border-color: #71b7db;
+  box-shadow: 0 0 0 2px rgba(113, 183, 219, 0.2);
+}
+
+.body-measurement-form button {
+  padding: 12px 18px;
+  background-color: #71b7db;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.body-measurement-form button:hover {
+  background-color: #44a1cf;
+  transform: scale(1.03);
+}
+
+.result {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  background-color: #f0f8ff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #777;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #111;
+}

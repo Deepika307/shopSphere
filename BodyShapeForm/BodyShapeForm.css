@@ -1,0 +1,96 @@
+.body-shape-wrapper {
+  min-height: 10vh;
+  background: linear-gradient(to right, #fefefe, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.body-shape-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+.body-shape-card h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.body-shape-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.body-shape-form input {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.body-shape-form input:focus {
+  border-color: #4fc3f7;
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.2);
+}
+
+.body-shape-form button {
+  padding: 14px 18px;
+  background-color: #71b7db;
+  color: #000000;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.body-shape-form button:hover {
+  background-color: #489fcb;
+  transform: scale(1.03);
+}
+
+.body-shape-result {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #333;
+  font-weight: 500;
+  background-color: #e0f7fa;
+  padding: 12px 16px;
+  border-radius: 10px;
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

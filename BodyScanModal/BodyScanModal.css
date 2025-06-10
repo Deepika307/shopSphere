@@ -1,0 +1,127 @@
+.body-scan-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.body-scan-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.modal-close-icon:hover {
+  transform: scale(1.2);
+  color: #000000;
+}
+
+.modal-actions button,
+.modal-footer button {
+  margin: 8px;
+  padding: 10px 16px;
+  border: none;
+  background-color: #71b7db;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal-actions button:hover,
+.modal-footer button:hover {
+  background-color: #44a1cf;
+}
+
+.preview-area {
+  width: 100%;
+  max-width: 600px; /* Optional: control max width */
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.camera-feed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.preview-image {
+  max-width: 100%;
+  min-width: 550px;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+/* Footer buttons arranged side-by-side */
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.capture-btn {
+  padding: 10px 16px;
+  background-color: #71b7db;
+  color: rgb(0, 0, 0);
+  border: 2px solid #71b7db;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.capture-btn:hover {
+  background-color: #6f1ee6;
+  border-color: #265ed7;
+}
+
+@media (max-width: 500px) {
+  .modal-actions button,
+  .modal-footer button {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

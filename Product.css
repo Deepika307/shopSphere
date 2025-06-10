@@ -1,0 +1,25 @@
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.size-btn {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.size-btn:hover {
+  border-color: #888;
+}
+
+.size-btn.selected {
+  background-color: #71b7db;
+  color: white;
+  border-color: #2c90d6;
+}
